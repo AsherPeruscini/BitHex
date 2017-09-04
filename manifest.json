@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+
+  "name": "Cryptowat.ch Themer",
+  "version": "1.0",
+  "description": "soften the colors of cryptowat.ch",
+
+  "content_scripts": [{
+
+    "css": ["overrides.css"],
+    "matches": ["https://*.cryptowat.ch/*"],
+    "matches": ["https://*.cryptowatch.cn/*"],
+    "matches": ["https://*.cryptowatch.es/*"],
+    "matches": ["https://*.cryptowatch.gr/*"],
+    "matches": ["https://*.cryptowatch.dk/*"],
+    "matches": ["https://*.cryptowatch.de/*"],
+    "matches": ["https://*.cryptowatch.jp/*"]
+  }]
+}
