@@ -1,15 +1,61 @@
 {
-  "manifest_version": 2,
+    "manifest_version": 2,
 
-  "name": "BitHex",
-  "version": "0.1.0",
-  "description": "Changing the colors on //cryptowat.ch (for now at least)",
+    "name": "BitHex",
+    "version": "0.2.0",
+    "description": "Changing the colors on //cryptowat.ch (for now at least)",
 
-  "content_scripts": [{
-    "css": ["app/overrides.css"],
-    "js": ["app/overrides.js"],
-    "matches": ["https://cryptowat.ch/*"],
-    "matches": ["https://cryptowatch.jp/*"]
-  }]
+    "icons": {
+        "16": "app/img/16.png",
+        "32": "app/img/32.png",
+        "48": "app/img/48.png",
+        "128": "app/img/128.png"
+    },
+
+    "content_scripts": [{
+            "matches": ["*://*.cryptowat.ch/*"],
+            "css": ["app/css/overrides.css"],
+            "js": ["app/js/overrides.js"]
+        },
+        {
+            "matches": ["*://*.cryptowatch.cn/*"],
+            "css": ["app/css/overrides.css"],
+            "js": ["app/js/overrides.js"]
+        },
+        {
+            "matches": ["*://*.cryptowatch.es/*"],
+            "css": ["app/css/overrides.css"],
+            "js": ["app/js/overrides.js"]
+        },
+        {
+            "matches": ["*://*.cryptowatch.gr/*"],
+            "css": ["app/css/overrides.css"],
+            "js": ["app/js/overrides.js"]
+        },
+        {
+            "matches": ["*://*.cryptowatch.dk/*"],
+            "css": ["app/css/overrides.css"],
+            "js": ["app/js/overrides.js"]
+        },
+        {
+            "matches": ["*://*.cryptowatch.de/*"],
+            "css": ["app/css/overrides.css"],
+            "js": ["app/js/overrides.js"]
+        },
+        {
+            "matches": ["*://*.cryptowatch.jp/*"],
+            "css": ["app/css/overrides.css"],
+            "js": ["app/js/overrides.js"]
+        }
+    ],
+
+    "browser_action": {
+        "default_icon": "app/img/icon.png",
+        "default_popup": "tracker.html"
+    },
+
+    "permissions": [
+        "activeTab"
+    ]
 
 }
