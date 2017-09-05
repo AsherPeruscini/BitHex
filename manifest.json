@@ -13,36 +13,43 @@
     },
 
     "content_scripts": [{
+            "run_at": "document_start",
             "matches": ["*://*.cryptowat.ch/*"],
             "css": ["app/css/overrides.css"],
             "js": ["app/js/overrides.js"]
         },
         {
+            "run_at": "document_start",
             "matches": ["*://*.cryptowatch.cn/*"],
             "css": ["app/css/overrides.css"],
             "js": ["app/js/overrides.js"]
         },
         {
+            "run_at": "document_start",
             "matches": ["*://*.cryptowatch.es/*"],
             "css": ["app/css/overrides.css"],
             "js": ["app/js/overrides.js"]
         },
         {
+            "run_at": "document_start",
             "matches": ["*://*.cryptowatch.gr/*"],
             "css": ["app/css/overrides.css"],
             "js": ["app/js/overrides.js"]
         },
         {
+            "run_at": "document_start",
             "matches": ["*://*.cryptowatch.dk/*"],
             "css": ["app/css/overrides.css"],
             "js": ["app/js/overrides.js"]
         },
         {
+            "run_at": "document_start",
             "matches": ["*://*.cryptowatch.de/*"],
             "css": ["app/css/overrides.css"],
             "js": ["app/js/overrides.js"]
         },
         {
+            "run_at": "document_start",
             "matches": ["*://*.cryptowatch.jp/*"],
             "css": ["app/css/overrides.css"],
             "js": ["app/js/overrides.js"]
