@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+
+  "name": "BitHex",
+  "version": "0.1.0",
+  "description": "Changing the colors on //cryptowat.ch (for now at least)",
+
+  "content_scripts": [{
+    "css": ["app/overrides.css"],
+    "js": ["app/overrides.js"],
+    "matches": ["https://cryptowat.ch/*"],
+    "matches": ["https://cryptowatch.jp/*"]
+  }]
+
+}
