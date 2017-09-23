@@ -1,2 +1,2 @@
-# cryptowatch-chrome-extension
-A Google Chrome browser extension that allows you to alter the CSS of cryptowat.ch
+# bitHEX
+A Google Chrome browser extension that alters the CSS of cryptowat.ch for easier readability.
