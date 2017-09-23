@@ -1,9 +1,9 @@
 {
     "manifest_version": 2,
 
-    "name": "BitHex",
-    "version": "1.0.0",
-    "description": "Changing the colors on //cryptowat.ch (for now at least)",
+    "name": "bitHEX",
+    "version": "1.0.1",
+    "description": "Changing the colors on //cryptowat.ch (for now at least) for easier readability",
 
     "icons": {
         "16": "app/img/16.png",
