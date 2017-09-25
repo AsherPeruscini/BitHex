@@ -57,8 +57,7 @@
     ],
 
     "browser_action": {
-        "default_icon": "app/img/icon.png",
-        "default_popup": "tracker.html"
+        "default_icon": "app/img/icon.png"
     },
 
     "permissions": [
